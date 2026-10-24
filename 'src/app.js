@@ -1,8 +1,8 @@
 import express from 'express';
 import helmet from 'helmet';
 import accountRoutes from './routes/account.routes.js';
-import { apiLimiter } from './middleware/rateLimiter.js';
-import { errorHandler } from './middleware/errorHandler.js';
+import { apiLimiter } from './rateLimiter.js';
+import { errorHandler } from './errorHandler.js';
 
 const app = express();
 
